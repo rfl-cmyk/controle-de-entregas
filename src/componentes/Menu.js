@@ -28,6 +28,7 @@ function Menu() {
     return(
         <nav className="leftMenu" id="leftMenu">
           <p onClick={() => escondeMenu()}>&equiv;</p>
+          <NavLink to="/" className="boxLogo"></NavLink>
           <ul>
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/motos">Motos</NavLink></li>

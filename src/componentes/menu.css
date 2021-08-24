@@ -10,9 +10,26 @@
     flex-direction: column;
     transition: all ease 0.7s;
 }
+
+.leftMenu p {
+    cursor: pointer;
+    margin: 10px 0 0 182px;
+    color: rgb(42, 48, 66);
+    font-size: 25pt;
+    transition: all ease 0.5s;
+    position: absolute;
+}
+
+.boxLogo {
+    width: 80px;
+    height: 80px;
+    background-image: url(../imagens/box-logo.png);
+    background-size: cover;
+    margin: 18px auto 0;
+}
   
 .leftMenu ul {
-    margin-left: -15px;
+    margin: 5px 0 0 -21px;
 }
   
 .leftMenu ul li {
@@ -46,25 +63,12 @@
     padding: 1px;
 }
 
-.leftMenu p {
-    cursor: pointer;
-    margin: 10px 0 0 157px;
-    color: rgb(172, 172, 172);
-    font-size: 15pt;
-    transition: all ease 0.5s;
-}
-
-.leftMenu p:hover {
-    color: #fff;
-    transition: all ease 0.5s;
-}
-
 .leftMenu span {
     cursor: pointer;
 }
 
 .esconde {
-    margin-left: -155px;
+    margin-left: -160px;
     transition: all ease 0.5s;
 }
 
