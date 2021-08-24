@@ -1,24 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import Menu from './componentes/Menu'
+import Motoqueiros from './componentes/Motoqueiros'
+import Motos from './componentes/Motos'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        
+        <Menu />
+
+        <main>
+          <Switch>
+            <Route path="/" exact>
+              <p>home..</p>
+            </Route>
+            <Route path="/motoqueiros">
+              <Motoqueiros />
+            </Route>
+            <Route path="/motos">
+              <Motos />
+            </Route>
+          </Switch>
+        </main>
+
+      </div>
+    </Router>
   );
 }
 
